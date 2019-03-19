@@ -24,12 +24,17 @@
     ICP: "京ICP:1111"
   }
 }
+
 ```
+### 标签
 - h1 唯一, h1 = title
 - nav, ul type 为 Array
-- div, li 如果有子元素, type 为 Object
-- footer 如果有子元素, type 为 Object
-- img 自动获取两属性: img, alt(如果有)
+- img 自动获取两属性: img, alt(如果有).
+- address 对应 key为 address 的字符串.
+- 其它: (div, li, footer) 如果有子元素, type 为 Object.
+### 属性
+- `data-key` 对应 对象的 key
+- `data-type` 对应 值的 `type`, 有: `str`, `obj`, `arr`, `bool`, `num`. 默认为 `str`.
 ## 结果
 ```html
 <body>
