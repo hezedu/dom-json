@@ -32,7 +32,7 @@
     <a href="/">首页</a>
     <a href="/about">关于</a>
   </nav>
-  <div id="body">
+  <div data-key="body">
     <h1>这是一个网站<h1>
     <ul>
       <li><img src="/a.jpg"></li>
