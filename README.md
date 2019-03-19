@@ -11,12 +11,12 @@
     title: '这是一个网站',
 
     banner: [
-      { src: '/a.jpg'},
-      { src: '/b.jpg'}
+      { img: '/a.jpg'},
+      { img: '/b.jpg'}
     ],
     threeDesc: [
-      {src: '/c.jpg', name: 'ccccc', desc: 'desc'},
-      {src: '/d.jpg', name: 'ddddd', desc: 'desc'}
+      {img: '/c.jpg', name: 'ccccc', desc: 'desc'},
+      {img: '/d.jpg', name: 'ddddd', desc: 'desc'}
     ]
   },
   footer: {
@@ -25,6 +25,11 @@
   }
 }
 ```
+- h1 唯一, h1 = title
+- nav, ul type 为 Array
+- div, li 如果有子元素, type 为 Object
+- footer 如果有子元素, type 为 Object
+- img 自动获取两属性: img, alt(如果有)
 ## 结果
 ```html
 <body>
@@ -32,13 +37,15 @@
     <a href="/">首页</a>
     <a href="/about">关于</a>
   </nav>
-  <div data-key="body">
+  <div data-key="body"> 
     <h1>这是一个网站<h1>
-    <ul>
-      <li><img src="/a.jpg"></li>
+    <ul data-key="banner">
+      <li> 
+        <img src="/a.jpg">
+      </li>
       <li><img src="/b.jpg"></li>
     </ul>
-     <ul>
+     <ul data-key="threeDesc">
        <li>
          <img src="/c.jpg">
          <div data-key="name">ccccc</div>
