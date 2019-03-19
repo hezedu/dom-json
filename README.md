@@ -21,7 +21,7 @@
   },
   footer: {
     address: "北京朝阳区",
-    beian: "京IPC:1111"
+    ICP: "京ICP:1111"
   }
 }
 ```
@@ -51,7 +51,7 @@
    </ul>
     <footer>
       <address>北京朝阳区</address>
-      <div data-key="beian">京IPC:1111</div>
+      <div data-key="ICP">京IPC:1111</div>
     </footer>
 </body>
 ```
