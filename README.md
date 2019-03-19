@@ -1,5 +1,5 @@
 # dom-json
-noscript
+
 ```js
 {
   title: '这是一个网站',
@@ -15,7 +15,7 @@ noscript
 ```
 ## 结果
 ```html
-<noscript>
+<body>
   <h1>这是一个网站<h1>
   <ul>
     <li><img src="/a.jpg"></li>
@@ -33,5 +33,5 @@ noscript
        <div>desc</div>
      </li>
    </ul>
-</noscript>
+</body>
 ```
