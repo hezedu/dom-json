@@ -29,7 +29,7 @@
 ### 标签
 - h1 唯一, h1 = title
 - nav, ul type 为 Array
-- img 自动获取两属性: img, alt(如果有).
+- img 对应 key为 img.
 - address 对应 key为 address 的字符串.
 - 其它: (div, li, footer) 如果有子元素, type 为 Object.
 ### 属性
