@@ -7,7 +7,6 @@ function dom2Json() {
   dom.appendTo($div);
   const data = [{}];
   _dom2Json(dom, 0, data);
-  dom.remove();
   return data[0];
 }
 function getTag($dom){
