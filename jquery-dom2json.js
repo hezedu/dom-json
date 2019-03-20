@@ -53,7 +53,7 @@ function _dom2Json(dom, key, pObj) {
   }
   type = type || 'str';
   if(tag === 'img') {
-    console.log('type',  type, '| tag', tag,'| key', key, '| pObj', pObj, '| pTag', pTag);
+    // console.log('type',  type, '| tag', tag,'| key', key, '| pObj', pObj, '| pTag', pTag);
   }
 
   if(type === 'str'){
@@ -80,7 +80,7 @@ function _dom2Json(dom, key, pObj) {
     const sub = {};
     pObj[key] = sub;
     child.each(function(i) {
-      console.log('i', i);
+      // console.log('i', i);
       const subDmo = $(this);
       const key = getKey(subDmo);
       
@@ -92,4 +92,4 @@ function _dom2Json(dom, key, pObj) {
 
 const result = dom2Json();
 
-console.log('result', JSON.stringify(result));
+// console.log('result', JSON.stringify(result));

@@ -46,7 +46,7 @@ function _json2Dom(key, value, pTag){
   const type = realType(value);
   const tag = getTag(key, type, pTag);
 
-  console.log('tag', tag);
+  // console.log('tag', tag);
 
   let str = `<${tag}`;
   const endTag = getEndTag(tag);
