@@ -7,6 +7,7 @@ function dom2Json() {
   dom.appendTo($div);
   const data = [{}];
   _dom2Json(dom, 0, data);
+  dom.remove();
   return data[0];
 }
 function getTag($dom){
@@ -90,6 +91,6 @@ function _dom2Json(dom, key, pObj) {
   }
 }
 
-const result = dom2Json();
+window.__jquery_dom2Json = dom2Json;
 
 // console.log('result', JSON.stringify(result));

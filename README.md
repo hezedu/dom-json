@@ -1,5 +1,18 @@
 # dom-json
+## json 2 dom 后端
+```js
+const json2Dom = require('./index');
+json2Dom({
+  some: 'json'
+});
+```
+## dom 2 json 前端 jQuery
+```js
+var result = window.__jquery_dom2Json();
+console.log('result', JSON.stringify(result));
+```
 
+## 开发
 ```js
 {
   nav: [
