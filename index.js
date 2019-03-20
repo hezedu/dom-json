@@ -1,7 +1,5 @@
 
-function dom2Json(html) {
-  html
-}
+
 function json2Dom(obj){
   let html = _json2Dom(0, obj, '');
   html = html.replace(`<div data-key="0">`, '<div id="dom-json">');
@@ -55,7 +53,7 @@ function _json2Dom(key, value, pTag){
 
 
 
-  if(tag === 'div'){
+  if(tag === 'div' || tag === 'ul'){
     str += ` data-key="${key}"`;
   }
   switch(type) {
@@ -98,5 +96,4 @@ function _json2Dom(key, value, pTag){
 }
 
 
-exports.dom2Json = dom2Json;
-exports.json2Dom = json2Dom;
+module.exports = json2Dom;
