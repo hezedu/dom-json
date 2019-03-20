@@ -1,0 +1,12 @@
+{
+  "name": "dom-json",
+  "version": "0.0.1",
+  "author": "hezedu",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:github.com/hezedu/dom-json.git"
+  }
+}
